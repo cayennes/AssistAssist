@@ -1,4 +1,4 @@
-## Interface: 40200
+## Interface: 40300
 ## Title: AssistAssist
 ## Notes: Makes assisting easy whether you're assisting or want to be assisted by allowing you to set a keybinding which will automatically target the dungeon finder tank's target or put a raid mark on your current target if that's you. A second keybinding allows you to manually set the player you want to assist or whether you want to mark. Has LibDataBroker support.
 ## Version: 1.0.3
