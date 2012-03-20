@@ -1,0 +1,70 @@
+1.0.3
+
+ * Updated .toc for 4.2
+
+1.0.2
+
+ * Updated .toc for 4.1
+
+1.0.1
+
+ * Config panel slightly reorganized
+ * Cleaned up config code
+
+1.0 Declaring it release-ready
+
+ * I have continued testing didn't find any bugs in the past 48 hours.  Previously I found bugs every day and never received one bug report.  Apparently posting betas isn't effective.  Though I did hear from someone that it worked the first day there weren't any, so...  who knows.
+ * Slightly further expanded help and about
+
+0.6 Basic raid support, bugfix
+
+ * Raid support; like in a party it will now automatically assist a tank in your raid.  The issue remains that it's a lot more likely to run into multiple tanks (it will pick one of them) in which case you're probably better off picking one manually.
+ * Should behave correctly when someone uses the set role option to make the tank not a tank
+ * Continued code reorganization
+
+0.5 No-tank options, more chat spam removed
+
+ * Make applying marks when there's no tank an option rather than standard behavior
+ * Actually no longer will sometimes first tell you that it is assisting "Unknown" when a tank joins the party (Did you know that WoW characters can't be named "Unknown"?)
+ * Will no longer report the change multiple times when a tank joins the party in combat
+ * Rewrote a bunch of code because I realized it could be more sensical
+
+0.4 Better update messages, bugfixes
+
+ * Fixed bug that prevented going from manual set to auto set mode
+ * Update messages in chat now indicate whether the update was automatic or manual
+ * There is now an update message when you switch between manual and automatic even if the tank/assist doesn't change
+ * Removed event that was causing "assisting Unknown" immediately before assisting the correct tank on entering a dungeon; other events should cover every meaningful change
+ * Fixed a bug that prevented changes in what mark to apply from being automatically updated
+ * Broker plugin mentioned in help and MetaData.
+ * Made manual set description in help clearer.
+
+0.3 LibDataBroker support, bugfixes
+
+ * Added broker plugin
+ * Replaced a confusingly worded and misspelled status message, changed wording partly to simplify creating sensical broker text
+ * Loading message before status message
+ * Removed capitilization in the middle of binding tooltip in config panel
+ * Fixed bug that interfered with manually assisting someone on another server
+
+0.2 Initial beta
+
+ * Tested 0.1 in one dungeon that did contain the major test cases; it worked
+ * Removed debugging messages
+
+0.1 Initial upload
+
+Seriously needing some testing.  Hopefully has the following features:
+ * Assist or mark keybinding that automatically assist the dugeon finder tank or marks if that's you
+ * Another keybinding allows you to manually set who should be assisted
+ * Information about what the primary keybinding will do printed to chat frame when it changes
+ * Options and info panel
+
+Particularly needs checking:
+ * Setting assist after combat if it was changed in combat
+ * Keep manually set assist when party changes
+ * about/help section or page
+ * all the descriptions make sense and are good
+ * Only message when macro text is checked for update but doesn't actually change is the debug one
+
+Still has lots of debugging spam

@@ -1,0 +1,6 @@
+<Bindings>
+	<Binding name="CLICK AssistAssistSB:LeftButton" header="ASSISTASSIST" />
+	<Binding name="AASETASSIST">
+		LibStub("AceAddon-3.0"):GetAddon("AssistAssist"):setManualAssistToTarget()
+	</Binding>
+</Bindings>
