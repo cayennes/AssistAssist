@@ -1,10 +1,7 @@
-1.0.5
-
- * Added README
-
 1.0.4
 
  * Updated .toc for 4.3
+ * Added README and otherwise set up for curse packaging
 
 1.0.3
 
