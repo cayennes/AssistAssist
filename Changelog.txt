@@ -1,3 +1,10 @@
+1.0.5
+
+ * Updated .toc for 5.0.4
+
+Crossing fingers that this works; I looked at what's been updated and I
+think it should be okay, but it's completely untested.
+
 1.0.4
 
  * Updated .toc for 4.3
