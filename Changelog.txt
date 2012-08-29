@@ -1,3 +1,7 @@
+1.0.5.1
+
+ * Update the changelog before adding release tag so it shows up properly on the pages that curse generates
+
 1.0.5
 
  * Updated .toc for 5.0.4
