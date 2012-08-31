@@ -16,10 +16,6 @@ If the tank/person to assist changes in combat the change will not take effect u
 
 Especially now that I'm not playing WoW regularly, users make this addon possible.  Patch 5.0.4 hit at a particularly bad time for me, and two users notified me that the addon needed updating (I otherwise would have missed it) and one actually sent me the necessary fixes.
 
-== Thanks ==
-
-Especially now that I'm not playing WoW regularly, users make this addon possible.  Patch 5.0.4 hit at a particularly bad time for me, and two users notified me that the addon needed updating (I otherwise would have missed it) and one actually sent me the necessary fixes.
-
 == Help Me ==
 
 Please report any bugs you find.  You can message me here, leave a ticket at curseforge, or email me at luacayenne@gmail.com.
