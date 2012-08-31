@@ -12,20 +12,16 @@ If you are in a raid or other situation where there are multiple tanks, it will 
 
 If the tank/person to assist changes in combat the change will not take effect until you leave combat (this is a restriction Blizzard has created in their API to prevent automation.)
 
-== Considered Features ==
+== Thanks ==
 
-Each of these features will likely be added if I hear from anyone who wants it; they're all easy to implement, but why spend time on a feature no one would use?  (Or at least no one cares enough about to take the time to send me a message.)
-* Option to turn off update messages
-* Option to automatically update even if you have manually set the tank/assist (for example if your main use of the manual assist button is to assist a DPS who is tanking some trash in a random dungeon where the tank has dropped)
-* Automatically assist the main assist in a raid that has a main assist set (personally I never see this used)
-* Option to act like tab-targeting when there is no tank/person to assist.
-* Set what mark you apply from a LibDataBroker menu
-* Option to show manual/automatic mode in the LibDataBroker bar text rather than just the tooltip
-* Profiles (with dual-spec support)
-* GPL License
+Especially now that I'm not playing WoW regularly, users make this addon possible.  Patch 5.0.4 hit at a particularly bad time for me, and two users notified me that the addon needed updating (I otherwise would have missed it) and one actually sent me the necessary fixes.
 
 == Help Me ==
 
 Please report any bugs you find.  You can message me here, leave a ticket at curseforge, or email me at luacayenne@gmail.com.
 
 Also let me know if there are features you'd like.  Though know that simplicity is one goal of this addon.
+
+== P.S. ==
+
+I intend to add a GPL license to this, but I haven't gotten around to it even though it's trivial.  So if you want to use any of the code and GPL would work for you, just let me know and I'll do that.
