@@ -61,19 +61,23 @@ local function getTank(changedPlayer, newRole)
 		return getPlayerName()
 	end
 	-- otherwise find another tank
-	for _, groupType in ipairs({"Raid", "Party"}) do
-		for i = 1, _G["GetNum"..groupType.."Members"]() do
-			local currentPlayer = UnitName(groupType..i)
-			if currentPlayer == getPlayerName() then
-				-- ignore since this function is *other* tank
-			elseif currentPlayer ~= changedPlayer then
-				if UnitGroupRolesAssigned(currentPlayer) == "TANK" then
-					return currentPlayer
-				end
-			else
-				if newRole == "TANK" then
-					return currentPlayer
-				end
+        local groupType
+        if IsInRaid() then
+          groupType = "Raid"
+        else
+          groupType = "Party"
+        end
+        for i = 1, GetNumGroupMembers() do
+		local currentPlayer = UnitName(groupType..i)
+		if currentPlayer == getPlayerName() then
+			-- ignore since this function is *other* tank
+		elseif currentPlayer ~= changedPlayer then
+			if UnitGroupRolesAssigned(currentPlayer) == "TANK" then
+				return currentPlayer
+			end
+		else
+			if newRole == "TANK" then
+				return currentPlayer
 			end
 		end
 	end
@@ -222,6 +226,6 @@ function AssistAssist:OnEnable()
 	self:updateIfNecessary()
 	ldbObject.text = self:getShortStatusText() -- set the text if we still have the empty macro
 	self:RegisterEvent("ROLE_CHANGED_INFORM", "roleEvent") -- this happens when someone manually changes a role
-	self:RegisterEvent("PARTY_MEMBERS_CHANGED", "roleEvent")
+	self:RegisterEvent("GROUP_ROSTER_UPDATE", "roleEvent")
 end
 
