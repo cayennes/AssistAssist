@@ -1,3 +1,7 @@
+1.0.6
+
+* Update for 6.2
+
 1.0.5.2
 
  * Essential bugfixes so that it actually works for 5.0.4; supplied by an extremely helpful user.
